@@ -1,0 +1,14 @@
+.note {
+	color: #a8a8a8;
+
+	&.active {
+		color: dodgerblue;
+	}
+}
+
+.note-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 225px;
+}

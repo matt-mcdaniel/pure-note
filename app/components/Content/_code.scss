@@ -1,0 +1,80 @@
+@import '_codemirror';
+@import '_codemirror-mdn-like';
+@import url(https://fonts.googleapis.com/css?family=PT+Mono);
+
+$mono: 'PT Mono';
+$mobile: 800px;
+
+.code {
+	width: 100%;
+}
+
+.ReactCodeMirror {
+	width: 100%;
+	font-family: $mono;
+}
+
+.code-mirror.full {
+    .cm-s-mdn-like.CodeMirror {
+        height: 75vh;
+    }
+    .cm-s-mdn-like.CodeMirror {
+        position: relative;
+        background: #fafafa;
+    }
+    .ReactCodeMirror--focused .CodeMirror-gutters {
+        border-left: 3px solid dodgerblue;
+    }
+}
+
+
+.code-chooser {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 40px;
+	 margin: 0;
+}
+
+.code-chooser__option {
+    text-align: center;
+    list-style: none;
+}
+
+.code-chooser__button {
+    width: 90px;
+    position: relative;
+    padding: 10px;
+    color: rgba(150,150,150,0.4);
+    cursor: pointer;
+
+    @media (max-width: $mobile){
+        width: 55px;
+    }
+
+    &.active > .code-chooser__text {
+        color: dodgerblue;
+    }
+
+    &:active {
+        .code-chooser__text {
+            color: darken(dodgerblue, 10%);
+        }
+
+        &:before {
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0.5) 40%);
+            opacity: 0.55;
+        }
+    }
+}
+
+.code-chooser__text {
+    position: relative;
+    text-shadow: inset 1px 2px 2px #000, 0 0 0 #fff, 1px 2px 2px #000;
+    font-weight: bold;
+    font-size: 14px;
+
+    @media (max-width: $mobile){
+        font-size: 12px;
+    }
+}
