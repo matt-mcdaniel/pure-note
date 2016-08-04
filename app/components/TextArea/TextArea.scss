@@ -1,0 +1,12 @@
+@import '../../assets/styles/code';
+@import '../../assets/styles/codemirror';
+@import '../../assets/styles/codemirror-mdn-like';
+
+.code {
+	flex: 2;
+}
+
+.textarea {
+	flex: 2;
+	width: 100%;
+}

@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = () => {
 	return {
-		entry: './app/app.js',
+		entry: './app/index.js',
 		output: {
 			publicPath: '/dist/',
 			path: 'dist/',

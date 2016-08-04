@@ -5,18 +5,15 @@
 $mono: 'PT Mono';
 $mobile: 800px;
 
-.code {
-	width: 100%;
-}
-
 .ReactCodeMirror {
 	width: 100%;
 	font-family: $mono;
 }
 
 .code-mirror.full {
+    position: relative;
     .cm-s-mdn-like.CodeMirror {
-        height: 75vh;
+        //height: 75vh;
     }
     .cm-s-mdn-like.CodeMirror {
         position: relative;

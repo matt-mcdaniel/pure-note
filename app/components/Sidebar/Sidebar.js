@@ -1,9 +1,9 @@
 import React from 'react';
-import './_sidebar.scss';
+import './Sidebar.scss';
 
 const Sidebar = (props) => {
 	return (
-		<div className="note-container">
+		<div className="sidebar">
 			{props.notes.map((n, i) => {
 				const className = i === props.activeIndex ? 'note active' : 'note';
 

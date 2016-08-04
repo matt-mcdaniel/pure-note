@@ -1,0 +1,9 @@
+.code-selector__item {
+	flex: 1;
+	list-style: none;
+	text-align: center;
+
+	&.active {
+		color: dodgerblue;
+	}
+}

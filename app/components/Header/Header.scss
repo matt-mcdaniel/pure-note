@@ -1,0 +1,27 @@
+header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.header__inner {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	height: 100%;
+	align-items: center;
+}
+
+.header__left {
+	flex: 1;
+	text-align: center;
+}
+
+.header__right {
+	flex: 2;
+}
